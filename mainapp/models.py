@@ -1,4 +1,5 @@
 from tabnanny import verbose
+
 from django.db import models
 
 
@@ -9,4 +10,4 @@ class Task(models.Model):
     date_modified = models.DateField(auto_now=True)
 
     class Meta:
-        ordering = ('date_create',)
+        ordering = ("date_create",)

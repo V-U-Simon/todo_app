@@ -2,7 +2,9 @@
 
 
 {% block content %}
-news 
+    {% for i in range %}
+        <li>news {{ forloop.counter0 }}</li>
+    {% endfor %}
 {% endblock %}
 
 <div class="card my-2">

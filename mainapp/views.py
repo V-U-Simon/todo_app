@@ -6,8 +6,8 @@ class MainPageView(TemplateView):
 
 
 class NewsPageView(TemplateView):
-    template_name = "base.html"
-    # template_name = "mainapp/news.html"
+    # template_name = "base.html"
+    template_name = "mainapp/news.html"
 
     def get_context_data(self, **kwargs):
         # Get all previous data
@@ -17,6 +17,7 @@ class NewsPageView(TemplateView):
         context[
             "news_preview"
         ] = "Предварительное описание, которое заинтересует каждого"
+        context["range"] = range(5)
         return context
 
 
